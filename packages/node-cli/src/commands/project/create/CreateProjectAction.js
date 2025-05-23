@@ -241,8 +241,6 @@ module.exports = class CreateProjectAction extends BaseAction {
 				if (createSpa) {
 					this._log.info(NodeTranslationService.getMessage(MESSAGES.SETUP_SPA_PROJECT));
 					await this._createSpaFiles(params[COMMAND_OPTIONS.SPA_PROJECT_NAME], projectAbsolutePath);
-					// this._log.info(NodeTranslationService.getMessage(MESSAGES.INIT_NPM_DEPENDENCIES));
-					// npmInstallSuccess = await this._runNpmInstall(this._getSpaProjectFolderSource(projectAbsolutePath));
 				}
 
 				//Unit Testing
